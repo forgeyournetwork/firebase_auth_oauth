@@ -99,7 +99,7 @@ public class FirebaseAuthOAuthViewController: UIViewController, FlutterPlugin {
                     let oauthCredential = credential as! OAuthCredential?
 					result?([
 						"providerId": authResult?.credential?.provider,
-						"accessToken": oauthCredential?.accessToken,
+						"accessToken": oauthCredential,
 						"idToken": oauthCredential?.idToken,
 						"secret": oauthCredential?.secret
 					])
